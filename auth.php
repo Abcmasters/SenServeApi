@@ -40,6 +40,7 @@ $pwh = $obj->Password;
 }
 if(password_verify($pw, $pwh)){
 $data = array( 'Passwort' => 'Valide',
+                'ID' => $ID,
                 'Benutzername' => $bn,
                 'Vorname' => $vn,
                 'Nachname' => $nn,
