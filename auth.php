@@ -30,6 +30,7 @@ $pw = $_POST["pword"];
 $statement = $connect->query("SELECT * FROM Nutzer WHERE Benutzername = '$bname'");
 
  while ($obj = $statement->fetch_object()) {
+ $ID = $obj->ID;
  $bn = $obj->Benutzername;
  $vn = $obj->Vorname;
  $nn = $obj->Nachname;
