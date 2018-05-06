@@ -12,8 +12,7 @@ $dbname = 'shop2_2';
 
 
 
-$sql = "SELECT * FROM Nutzer";
-$result = $connect->query("SELECT * FROM Nutzer  ");
+$result = $connect->query("SELECT * FROM Angebot  ");
 $outp = array();
  while ($obj = $result->fetch_assoc()) {
  $outp[] =  $obj;}
